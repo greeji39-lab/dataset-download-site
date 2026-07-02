@@ -477,7 +477,8 @@
       <p class="subtitle" style="font-size:0.9rem;opacity:0.6;">Professional Dataset &amp; File Download Service</p>
       <div class="cta-row">
         <a href="https://66pp.taobao.com/" class="btn-primary" rel="nofollow">🏪 淘宝店铺下单</a>
-        <a href="/dataset-download-site/video-download.html" class="btn-outline">🎬 视频下载服务</a>
+        <a href="/dataset-download-site/video-download.html" class="btn-outline">🎬 视频下载</a>
+        <a href="/dataset-download-site/image-edit.html" class="btn-outline">🖼️ 修图改字</a>
       </div>
     </div>
   </header>
@@ -498,7 +499,7 @@
         <div class="label">综合评分</div>
       </div>
       <div class="stat-card count-up">
-        <div class="number" data-target="993">99.3%</div>
+        <div class="number" data-target="100">100%</div>
         <div class="label">好评率</div>
       </div>
     </div>
@@ -694,6 +695,7 @@
       <p style="margin-top:10px;">
         <a href="/dataset-download-site/">首页</a>
         <a href="/dataset-download-site/video-download.html">视频下载</a>
+        <a href="/dataset-download-site/image-edit.html">修图改字</a>
         <a href="/dataset-download-site/sitemap.xml">Sitemap</a>
         <a href="https://66pp.taobao.com/" rel="nofollow">淘宝店铺</a>
       </p>
@@ -817,7 +819,9 @@
           
           if (progress < 1) requestAnimationFrame(update);
           else {
-            if (isPercent) el.textContent = targetNum.toFixed(1) + '%';
+            if (isPercent) {
+              el.textContent = (targetNum % 1 === 0 ? Math.floor(targetNum) : targetNum.toFixed(1)) + '%';
+            }
             else if (isFloat) el.textContent = targetNum.toFixed(1);
             else el.textContent = parseInt(targetNum).toLocaleString();
           }

@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>修图改字服务 - 闪电技术下载科技 | PS修图 · 图片改字 · 去水印</title>
+  <meta name="description" content="专业修图改字服务，支持PS修图、图片文字修改、水印去除、证件照处理、图片格式转换。淘宝5.0⭐店铺，快至10分钟交付。微信：F6659K">
+  <meta name="keywords" content="修图, 图片改字, PS修图, 去水印, 证件照处理, 图片修改, 文字修改, photo editing, image text edit">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://greeji39-lab.github.io/dataset-download-site/image-edit.html">
+
+  <meta property="og:title" content="修图改字服务 - 闪电技术下载科技 | 5.0⭐淘宝店铺">
+  <meta property="og:description" content="PS修图、图片文字修改、水印去除、证件照处理。快至10分钟交付，微信：F6659K">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://greeji39-lab.github.io/dataset-download-site/image-edit.html">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "修图改字服务",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "闪电技术下载科技",
+      "url": "https://greeji39-lab.github.io/dataset-download-site/"
+    },
+    "description": "专业修图改字服务：PS修图、图片文字修改、水印去除、证件照处理、格式转换",
+    "serviceType": "Photo Editing Service",
+    "areaServed": "Worldwide"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "可以修改图片上的文字吗？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "可以。支持修改图片上的任意文字内容，包括中文、英文、数字等，改完后字体风格与原图保持一致。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "修图改字需要多长时间？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "简单改字/去水印通常10-30分钟完成，复杂修图1-2小时内交付。紧急需求可加急处理。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "改字后的图片清晰度会变差吗？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "不会。我们使用专业PS处理，保证输出图片与原图同等清晰度，文字边缘自然无痕。"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --primary: #10b981;
+      --primary-dark: #059669;
+      --accent: #f59e0b;
+      --bg: #0a0a1a;
+      --card-bg: rgba(255,255,255,0.04);
+      --text: #e2e8f0;
+      --text-light: #94a3b8;
+      --border: rgba(255,255,255,0.08);
+      --radius: 16px;
+    }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+    a { color: #34d399; text-decoration: none; transition: color 0.3s; }
+    a:hover { color: #6ee7b7; }
+    .container { max-width: 960px; margin: 0 auto; padding: 0 20px; position: relative; z-index: 1; }
+
+    #particles {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .breadcrumb { padding: 16px 0; font-size: 0.85rem; color: var(--text-light); }
+    .breadcrumb a { color: var(--text-light); }
+
+    @keyframes borderGlow {
+      0%, 100% { border-color: rgba(16,185,129,0.4); }
+      50% { border-color: rgba(52,211,153,0.8); }
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 0 45px;
+      position: relative;
+    }
+    .hero .badge {
+      display: inline-block;
+      background: rgba(16,185,129,0.15);
+      border: 1px solid rgba(16,185,129,0.3);
+      color: #6ee7b7;
+      padding: 6px 16px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      margin-bottom: 20px;
+      animation: borderGlow 3s ease-in-out infinite;
+    }
+    .hero h1 {
+      font-size: clamp(1.8rem, 5vw, 2.5rem);
+      font-weight: 900;
+      background: linear-gradient(135deg, #e2e8f0 0%, #34d399 50%, #6ee7b7 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 8px;
+    }
+    .hero .subtitle {
+      font-size: 1.05rem;
+      color: var(--text-light);
+      margin-bottom: 16px;
+    }
+    .btn-primary {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--primary), #34d399);
+      color: #0a0a1a;
+      padding: 14px 32px;
+      border-radius: 30px;
+      font-weight: 700;
+      font-size: 1.05rem;
+      transition: all 0.3s;
+      box-shadow: 0 0 30px rgba(16,185,129,0.3);
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 50px rgba(16,185,129,0.5);
+      text-decoration: none;
+      color: #0a0a1a;
+    }
+
+    section { padding: 45px 0; }
+    .section-title {
+      font-size: 1.6rem;
+      font-weight: 800;
+      text-align: center;
+      margin-bottom: 8px;
+    }
+    .section-desc {
+      text-align: center;
+      color: var(--text-light);
+      margin-bottom: 30px;
+    }
+
+    /* Service cards */
+    .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
+    .service-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px 20px;
+      text-align: center;
+      backdrop-filter: blur(10px);
+      transition: all 0.3s;
+    }
+    .service-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(16,185,129,0.5);
+      box-shadow: 0 12px 40px rgba(16,185,129,0.1);
+    }
+    .service-card .icon { font-size: 2.4rem; margin-bottom: 12px; }
+    .service-card h3 { font-size: 1.1rem; margin-bottom: 6px; }
+    .service-card p { font-size: 0.88rem; color: var(--text-light); }
+
+    /* Steps */
+    .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; }
+    .step {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 22px 16px;
+      text-align: center;
+      backdrop-filter: blur(10px);
+    }
+    .step .num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      background: var(--primary);
+      color: #0a0a1a;
+      border-radius: 50%;
+      font-weight: 800;
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+    .step h3 { font-size: 0.95rem; }
+    .step p { font-size: 0.8rem; color: var(--text-light); margin-top: 4px; }
+
+    /* Examples */
+    .examples { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; }
+    .example-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px;
+      backdrop-filter: blur(10px);
+    }
+    .example-card h3 { font-size: 1rem; color: #6ee7b7; margin-bottom: 6px; }
+    .example-card p { font-size: 0.85rem; color: var(--text-light); }
+
+    /* FAQ */
+    .faq-grid { display: grid; gap: 12px; }
+    .faq-item {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px 22px;
+      backdrop-filter: blur(10px);
+      transition: all 0.3s;
+    }
+    .faq-item:hover { border-color: rgba(16,185,129,0.3); }
+    .faq-item h3 { font-size: 1rem; margin-bottom: 6px; }
+    .faq-item p { font-size: 0.9rem; color: var(--text-light); }
+
+    /* Contact */
+    .contact-card {
+      background: linear-gradient(135deg, rgba(16,185,129,0.1), rgba(5,150,105,0.1));
+      border: 1px solid rgba(16,185,129,0.25);
+      border-radius: var(--radius);
+      padding: 40px 30px;
+      text-align: center;
+      margin: 20px 0;
+    }
+    @keyframes glowPulse2 {
+      0%, 100% { box-shadow: 0 0 20px rgba(16,185,129,0.2); }
+      50% { box-shadow: 0 0 40px rgba(16,185,129,0.3), 0 0 80px rgba(16,185,129,0.1); }
+    }
+    .contact-card { animation: glowPulse2 4s ease-in-out infinite; }
+
+    /* Reveal */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Ticker */
+    .ticker-wrap {
+      overflow: hidden;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 12px 0;
+      margin: 30px 0;
+      position: relative;
+    }
+    .ticker-wrap::before, .ticker-wrap::after {
+      content: '';
+      position: absolute;
+      top: 0; bottom: 0;
+      width: 60px;
+      z-index: 2;
+      pointer-events: none;
+    }
+    .ticker-wrap::before { left: 0; background: linear-gradient(to right, var(--bg), transparent); }
+    .ticker-wrap::after { right: 0; background: linear-gradient(to left, var(--bg), transparent); }
+    @keyframes ticker {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .ticker {
+      display: flex;
+      gap: 40px;
+      animation: ticker 30s linear infinite;
+      width: max-content;
+      white-space: nowrap;
+    }
+    .ticker span { color: var(--text-light); font-size: 0.9rem; }
+
+    footer {
+      text-align: center;
+      padding: 30px 0 40px;
+      border-top: 1px solid var(--border);
+      color: var(--text-light);
+      font-size: 0.85rem;
+    }
+    footer a { margin: 0 8px; }
+
+    @media (max-width: 640px) {
+      .services { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <canvas id="particles"></canvas>
+
+  <div class="container">
+    <nav class="breadcrumb">
+      <a href="/dataset-download-site/">首页</a> &rsaquo; 修图改字
+    </nav>
+  </div>
+
+  <!-- Hero -->
+  <div class="container">
+    <header class="hero">
+      <div class="badge">🖼️ 专业修图 · 快至10分钟交付 &nbsp;|&nbsp; 📱 微信：F6659K</div>
+      <h1>修图改字服务</h1>
+      <p class="subtitle">PS修图 · 图片改字 · 去水印 · 证件照 · 格式转换</p>
+      <p class="subtitle" style="font-size:0.9rem;opacity:0.6;">Professional Image Editing &amp; Text Modification</p>
+      <a href="https://66pp.taobao.com/" class="btn-primary" rel="nofollow">🏪 淘宝下单</a>
+    </header>
+  </div>
+
+  <!-- Ticker -->
+  <div class="ticker-wrap">
+    <div class="ticker" id="ticker">
+      <span>🎉 <b>吴**</b> 下单了 图片改字</span>
+      <span>✅ <b>郑**</b> 的 证件照精修 已交付</span>
+      <span>⭐ <b>钱**</b> 给出 5星好评 · 去水印服务</span>
+      <span>🚀 <b>孙**</b> 购买了 批量修图套餐</span>
+      <span>📷 <b>周**</b> 的 老照片修复 已完成</span>
+      <span>💬 <b>杨**</b> 咨询了 合同改字</span>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <section>
+    <div class="container">
+      <h2 class="section-title reveal">🖼️ 服务项目</h2>
+      <p class="section-desc reveal">PS专业修图，改字不留痕，和原图一模一样</p>
+      <div class="services">
+        <div class="service-card reveal">
+          <div class="icon">✏️</div>
+          <h3>图片改字</h3>
+          <p>修改图片上的文字 · 中文/英文/数字 · 字体风格一致</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="icon">🎨</div>
+          <h3>PS修图</h3>
+          <p>人像精修 · 产品修图 · 调色美化 · 背景处理</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="icon">💧</div>
+          <h3>去水印</h3>
+          <p>图片去水印/LOGO · 复杂背景还原 · 无痕处理</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="icon">🪪</div>
+          <h3>证件照处理</h3>
+          <p>换底色 · 尺寸裁剪 · 美颜精修 · 各种规格</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="icon">🔄</div>
+          <h3>格式转换</h3>
+          <p>JPG/PNG/PDF/TIFF/WebP 互转 · 批量处理</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="icon">📄</div>
+          <h3>文档改字</h3>
+          <p>合同/证书/截图改字 · 公章日期修改 · 保密处理</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section>
+    <div class="container">
+      <h2 class="section-title reveal">📋 使用流程</h2>
+      <p class="section-desc reveal">发图 → 说明需求 → 收货，三步搞定</p>
+      <div class="steps">
+        <div class="step reveal">
+          <div class="num">1</div>
+          <h3>发送图片</h3>
+          <p>微信发原图给客服</p>
+        </div>
+        <div class="step reveal">
+          <div class="num">2</div>
+          <h3>说明需求</h3>
+          <p>告诉要改什么字/去什么水印</p>
+        </div>
+        <div class="step reveal">
+          <div class="num">3</div>
+          <h3>验收完成</h3>
+          <p>预览满意后付款收货</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Examples -->
+  <section>
+    <div class="container">
+      <h2 class="section-title reveal">💡 常见使用场景</h2>
+      <p class="section-desc reveal">这些场景我们都处理过无数次</p>
+      <div class="examples">
+        <div class="example-card reveal">
+          <h3>📱 截图改字</h3>
+          <p>聊天记录截图、转账截图需要修改文字内容？改完和原始截图一模一样。</p>
+        </div>
+        <div class="example-card reveal">
+          <h3>📋 合同修改</h3>
+          <p>合同/协议扫描件需要改公司名、日期、金额？高质量处理，打印看不出痕迹。</p>
+        </div>
+        <div class="example-card reveal">
+          <h3>🎓 证书处理</h3>
+          <p>证书/奖状需要修改姓名、编号、日期？专业处理，细节完美。</p>
+        </div>
+        <div class="example-card reveal">
+          <h3>🛒 商品图修图</h3>
+          <p>电商主图/详情图去水印、换背景、改LOGO、调色精修。</p>
+        </div>
+        <div class="example-card reveal">
+          <h3>📷 老照片修复</h3>
+          <p>老照片翻新、去折痕、去污渍、清晰度增强。</p>
+        </div>
+        <div class="example-card reveal">
+          <h3>🔤 外语翻译改字</h3>
+          <p>图片上的外语改成中文（或反过来），排版自然不突兀。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section>
+    <div class="container">
+      <h2 class="section-title reveal">❓ 常见问题</h2>
+      <div class="faq-grid">
+        <div class="faq-item reveal">
+          <h3>可以修改图片上的文字吗？</h3>
+          <p>可以。支持修改图片上的任意文字内容，包括中文、英文、数字等，改完后字体风格与原图保持一致，看不出修改痕迹。</p>
+        </div>
+        <div class="faq-item reveal">
+          <h3>修图改字需要多长时间？</h3>
+          <p>简单改字/去水印通常 10-30 分钟完成，复杂修图 1-2 小时内交付。紧急需求可加急处理，最快 5 分钟搞定。</p>
+        </div>
+        <div class="faq-item reveal">
+          <h3>改字后的图片清晰度会变差吗？</h3>
+          <p>不会。我们使用专业 PS 处理，保证输出图片与原图同等清晰度。文字边缘自然无痕，打印和电子版都看不出差异。</p>
+        </div>
+        <div class="faq-item reveal">
+          <h3>收费怎么算？</h3>
+          <p>简单改字/去水印按张收费，复杂修图按难度报价。具体微信沟通后报价，满意再下单。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <div class="container">
+    <div class="contact-card reveal">
+      <h2 style="font-size:1.6rem;font-weight:800;margin-bottom:8px;">📱 需要修图改字？微信秒回</h2>
+      <p style="font-size:2rem;font-weight:900;color:#34d399;letter-spacing:4px;">F6659K</p>
+      <p style="color:var(--text-light);margin-top:6px;">添加请备注「修图」· 发图即报价 · 满意再下单</p>
+      <div style="margin-top:16px;">
+        <a href="https://66pp.taobao.com/" class="btn-primary" rel="nofollow" style="font-size:0.95rem;">🏪 也可淘宝下单 →</a>
+      </div>
+      <p style="margin-top:14px;font-size:0.85rem;color:rgba(255,255,255,0.4);">
+        ← <a href="/dataset-download-site/" style="color:rgba(255,255,255,0.4);">返回首页</a>
+      </p>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>© 2024 闪电技术下载科技 &nbsp;|&nbsp; Lightning Tech Download</p>
+      <p style="margin-top:10px;">
+        <a href="/dataset-download-site/">首页</a>
+        <a href="/dataset-download-site/video-download.html">视频下载</a>
+        <a href="/dataset-download-site/image-edit.html">修图改字</a>
+        <a href="https://66pp.taobao.com/" rel="nofollow">淘宝店铺</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    // Particles
+    const canvas = document.getElementById('particles');
+    const ctx = canvas.getContext('2d');
+    let particles = [];
+    let mouse = { x: 0, y: 0 };
+
+    function resize() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+    resize();
+    window.addEventListener('resize', resize);
+    document.addEventListener('mousemove', e => { mouse.x = e.clientX; mouse.y = e.clientY; });
+
+    class Particle {
+      constructor() { this.reset(); }
+      reset() {
+        this.x = Math.random() * canvas.width;
+        this.y = Math.random() * canvas.height;
+        this.size = Math.random() * 2 + 0.5;
+        this.speedX = (Math.random() - 0.5) * 0.5;
+        this.speedY = (Math.random() - 0.5) * 0.5;
+        this.opacity = Math.random() * 0.5 + 0.1;
+      }
+      update() {
+        this.x += this.speedX;
+        this.y += this.speedY;
+        const dx = mouse.x - this.x;
+        const dy = mouse.y - this.y;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+        if (dist < 150) { this.x -= dx * 0.005; this.y -= dy * 0.005; }
+        if (this.x < 0 || this.x > canvas.width || this.y < 0 || this.y > canvas.height) this.reset();
+      }
+      draw() {
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(52, 211, 153, ${this.opacity})`;
+        ctx.fill();
+      }
+    }
+    for (let i = 0; i < 80; i++) particles.push(new Particle());
+
+    function drawConnections() {
+      for (let i = 0; i < particles.length; i++) {
+        for (let j = i + 1; j < particles.length; j++) {
+          const dx = particles[i].x - particles[j].x;
+          const dy = particles[i].y - particles[j].y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+          if (dist < 150) {
+            ctx.beginPath();
+            ctx.moveTo(particles[i].x, particles[i].y);
+            ctx.lineTo(particles[j].x, particles[j].y);
+            ctx.strokeStyle = `rgba(16, 185, 129, ${(1 - dist / 150) * 0.12})`;
+            ctx.lineWidth = 0.5;
+            ctx.stroke();
+          }
+        }
+      }
+    }
+    function animate() { ctx.clearRect(0, 0, canvas.width, canvas.height); particles.forEach(p => { p.update(); p.draw(); }); drawConnections(); requestAnimationFrame(animate); }
+    animate();
+
+    // Reveal
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+    }, { threshold: 0.15 });
+    reveals.forEach(el => observer.observe(el));
+
+    // Ticker
+    const ticker = document.getElementById('ticker');
+    if (ticker) ticker.innerHTML = ticker.innerHTML + ticker.innerHTML;
+  </script>
+</body>
+</html>
