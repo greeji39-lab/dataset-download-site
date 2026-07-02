@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Sitemap: https://greeji39-lab.github.io/dataset-download-site/sitemap.xml
+
+# Crawl-delay friendly
+Crawl-delay: 5
+
+# Disallow nothing — we want everything indexed
