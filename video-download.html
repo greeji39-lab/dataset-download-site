@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ====== SEO Meta ====== -->
+  <title>视频下载服务 - 闪电技术下载科技 | 专业视频代下载</title>
+  <meta name="description" content="专业视频下载服务，支持B站、YouTube、抖音、TikTok等平台的视频下载与格式转换。高清无水印，快速交付。淘宝4.9⭐店铺。Professional video download service.">
+  <meta name="keywords" content="视频下载, 视频代下载, B站视频下载, YouTube下载, 抖音去水印下载, 视频格式转换, video download service, TikTok download">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://greeji39-lab.github.io/dataset-download-site/video-download.html">
+
+  <!-- ====== Open Graph ====== -->
+  <meta property="og:title" content="视频下载服务 - 闪电技术下载科技 | 4.9⭐淘宝店铺">
+  <meta property="og:description" content="B站/YouTube/抖音/TikTok 视频下载，高清无水印，格式转换，快速交付。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://greeji39-lab.github.io/dataset-download-site/video-download.html">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- ====== Schema.org ====== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "视频下载服务",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "闪电技术下载科技",
+      "url": "https://greeji39-lab.github.io/dataset-download-site/"
+    },
+    "description": "专业视频下载服务，支持B站、YouTube、抖音、TikTok、腾讯视频、优酷等平台视频下载、去水印、格式转换",
+    "serviceType": "Video Download Service",
+    "areaServed": "Worldwide",
+    "offers": {
+      "@type": "Offer",
+      "price": "5.88",
+      "priceCurrency": "CNY",
+      "description": "单视频下载体验价"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "可以下载哪些平台的视频？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "支持B站、YouTube、抖音/TikTok、腾讯视频、优酷、爱奇艺、芒果TV、Vimeo、Twitter/X、Instagram等主流视频平台。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "下载的视频清晰度如何？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "我们会下载平台支持的最高清晰度版本，包括4K/1080P/720P等，具体取决于视频源的原始画质。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "下载的视频有水印吗？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "抖音/TikTok等平台默认去水印下载。B站/YouTube等平台视频本身无水印，下载后即为纯净版本。"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --primary: #dc2626;
+      --primary-dark: #b91c1c;
+      --accent: #f59e0b;
+      --bg: #fafafa;
+      --card: #ffffff;
+      --text: #1e293b;
+      --text-light: #64748b;
+      --border: #e5e7eb;
+      --radius: 12px;
+      --shadow: 0 4px 24px rgba(0,0,0,0.06);
+    }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+
+    /* Breadcrumb */
+    .breadcrumb {
+      padding: 16px 0;
+      font-size: 0.85rem;
+      color: var(--text-light);
+    }
+    .breadcrumb a { color: var(--text-light); }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(135deg, #7f1d1d 0%, #991b1b 50%, #dc2626 100%);
+      color: #fff;
+      padding: 50px 0 45px;
+      text-align: center;
+      border-radius: var(--radius);
+      margin-bottom: 40px;
+    }
+    .hero h1 {
+      font-size: clamp(1.6rem, 4.5vw, 2.2rem);
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+    .hero .subtitle {
+      font-size: 1.05rem;
+      opacity: 0.85;
+      margin-bottom: 16px;
+    }
+    .hero .cta {
+      display: inline-block;
+      background: #fff;
+      color: #dc2626;
+      padding: 12px 32px;
+      border-radius: 30px;
+      font-size: 1.05rem;
+      font-weight: 700;
+      transition: transform 0.2s;
+    }
+    .hero .cta:hover { transform: scale(1.04); text-decoration: none; }
+
+    /* Sections */
+    section { padding: 40px 0; }
+    section h2 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 8px;
+    }
+    section .section-desc {
+      text-align: center;
+      color: var(--text-light);
+      margin-bottom: 28px;
+    }
+
+    /* Platform grid */
+    .platform-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+    .platform-tag {
+      background: var(--card);
+      border: 1px solid var(--border);
+      padding: 10px 22px;
+      border-radius: 24px;
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: all 0.2s;
+    }
+    .platform-tag:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+
+    /* Features */
+    .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
+    .feature-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px 22px;
+      text-align: center;
+    }
+    .feature-card .icon { font-size: 2.2rem; margin-bottom: 10px; }
+    .feature-card h3 { font-size: 1.1rem; margin-bottom: 6px; }
+    .feature-card p { font-size: 0.9rem; color: var(--text-light); }
+
+    /* Pricing */
+    .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
+    .price-card {
+      background: var(--card);
+      border: 2px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px 20px;
+      text-align: center;
+    }
+    .price-card.featured {
+      border-color: var(--primary);
+      background: #fef2f2;
+    }
+    .price-card .price { font-size: 2rem; font-weight: 800; color: var(--primary); margin: 8px 0; }
+    .price-card .price small { font-size: 0.85rem; font-weight: 400; color: var(--text-light); }
+    .price-card .name { font-weight: 700; font-size: 1.1rem; }
+    .price-card .desc { font-size: 0.85rem; color: var(--text-light); margin: 6px 0; }
+    .price-card .btn {
+      display: inline-block;
+      margin-top: 12px;
+      background: var(--primary);
+      color: #fff;
+      padding: 8px 24px;
+      border-radius: 20px;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+    .price-card.featured .btn { background: var(--primary-dark); }
+
+    /* FAQ */
+    .faq-item {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px 22px;
+      margin-bottom: 10px;
+    }
+    .faq-item h3 { font-size: 1rem; margin-bottom: 4px; }
+    .faq-item p { font-size: 0.9rem; color: var(--text-light); }
+
+    /* Steps */
+    .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; }
+    .step {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 22px 16px;
+      text-align: center;
+    }
+    .step .num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      background: var(--primary);
+      color: #fff;
+      border-radius: 50%;
+      font-weight: 800;
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+    .step h3 { font-size: 0.95rem; }
+    .step p { font-size: 0.8rem; color: var(--text-light); margin-top: 4px; }
+
+    /* CTA */
+    .cta-banner {
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px;
+      border-radius: var(--radius);
+      margin: 30px 0;
+    }
+    .cta-banner h2 { color: #fff; }
+    .cta-banner .btn {
+      display: inline-block;
+      margin-top: 14px;
+      background: #fff;
+      color: var(--primary);
+      padding: 12px 32px;
+      border-radius: 30px;
+      font-weight: 700;
+    }
+    .cta-banner .btn:hover { transform: scale(1.04); text-decoration: none; }
+
+    footer {
+      text-align: center;
+      padding: 30px 0;
+      border-top: 1px solid var(--border);
+      color: var(--text-light);
+      font-size: 0.85rem;
+    }
+    footer a { margin: 0 8px; }
+  </style>
+</head>
+<body>
+
+  <!-- Breadcrumb -->
+  <div class="container">
+    <nav class="breadcrumb">
+      <a href="/dataset-download-site/">首页</a> &rsaquo; 视频下载
+    </nav>
+  </div>
+
+  <!-- Hero -->
+  <div class="container">
+    <header class="hero">
+      <h1>🎬 专业视频下载服务</h1>
+      <p class="subtitle">B站 · YouTube · 抖音 · TikTok · 腾讯视频 · 优酷 — 全平台覆盖</p>
+      <p class="subtitle" style="font-size:0.9rem;opacity:0.65;">高清无水印 · 格式转换 · 快速交付 · 淘宝4.9⭐</p>
+      <a href="https://66pp.taobao.com/" class="cta" rel="nofollow">🏪 立即下单</a>
+    </header>
+  </div>
+
+  <!-- Platforms -->
+  <section>
+    <div class="container">
+      <h2>📺 支持平台</h2>
+      <p class="section-desc">覆盖国内外主流视频平台，一键代下载</p>
+      <div class="platform-grid">
+        <span class="platform-tag">Bilibili (B站)</span>
+        <span class="platform-tag">YouTube</span>
+        <span class="platform-tag">抖音 / TikTok</span>
+        <span class="platform-tag">腾讯视频</span>
+        <span class="platform-tag">优酷</span>
+        <span class="platform-tag">爱奇艺</span>
+        <span class="platform-tag">芒果TV</span>
+        <span class="platform-tag">Vimeo</span>
+        <span class="platform-tag">Twitter / X</span>
+        <span class="platform-tag">Instagram</span>
+        <span class="platform-tag">西瓜视频</span>
+        <span class="platform-tag">快手</span>
+        <span class="platform-tag">Dailymotion</span>
+        <span class="platform-tag">Niconico</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section style="background:#fff;">
+    <div class="container">
+      <h2>📋 下单流程</h2>
+      <p class="section-desc">三步搞定，比你自己下载快10倍</p>
+      <div class="steps">
+        <div class="step">
+          <div class="num">1</div>
+          <h3>发送链接</h3>
+          <p>把视频链接发给客服</p>
+        </div>
+        <div class="step">
+          <div class="num">2</div>
+          <h3>确认需求</h3>
+          <p>选择清晰度/格式/去水印</p>
+        </div>
+        <div class="step">
+          <div class="num">3</div>
+          <h3>收货完成</h3>
+          <p>网盘/直链交付，秒收文件</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section>
+    <div class="container">
+      <h2>✨ 服务亮点</h2>
+      <p class="section-desc">不止是下载，更是视频处理一站式服务</p>
+      <div class="features">
+        <div class="feature-card">
+          <div class="icon">🎯</div>
+          <h3>去水印下载</h3>
+          <p>抖音/TikTok 默认去水印，输出纯净视频</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">📐</div>
+          <h3>最高清晰度</h3>
+          <p>4K/1080P 画质，自动选择最佳分辨率</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">🔄</div>
+          <h3>格式转换</h3>
+          <p>MP4/MKV/AVI/MOV 任意格式互转</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">⚡</div>
+          <h3>极速交付</h3>
+          <p>单个视频 5-30 分钟完成，批量可加急</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">📦</div>
+          <h3>批量下载</h3>
+          <p>播放列表/合集一键批量下载，打包交付</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">🎵</div>
+          <h3>音频提取</h3>
+          <p>视频转 MP3 音频，适合播客/音乐提取</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section style="background:#fff;">
+    <div class="container">
+      <h2>💰 价格参考</h2>
+      <p class="section-desc">透明定价，无隐藏费用</p>
+      <div class="pricing-grid">
+        <div class="price-card">
+          <div class="name">🎬 体验装</div>
+          <div class="price">&yen;5.88<small>/个</small></div>
+          <div class="desc">单个视频 · 最高1080P</div>
+          <a href="https://66pp.taobao.com/" class="btn" rel="nofollow">立即购买</a>
+        </div>
+        <div class="price-card featured">
+          <div class="name">🔥 套餐包</div>
+          <div class="price">&yen;19.9<small>/10个</small></div>
+          <div class="desc">10个视频 · 最高4K · 含去水印</div>
+          <a href="https://66pp.taobao.com/" class="btn" rel="nofollow">立即购买</a>
+        </div>
+        <div class="price-card">
+          <div class="name">👑 定制包</div>
+          <div class="price">面议</div>
+          <div class="desc">大批量 · 格式转换 · 加急</div>
+          <a href="https://66pp.taobao.com/" class="btn" rel="nofollow">联系客服</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section>
+    <div class="container">
+      <h2>❓ 常见问题</h2>
+      <p class="section-desc">关于视频下载服务的常见疑问</p>
+      <div class="faq-item">
+        <h3>可以下载哪些平台的视频？</h3>
+        <p>支持B站、YouTube、抖音/TikTok、腾讯视频、优酷、爱奇艺、芒果TV、Vimeo、Twitter/X、Instagram等主流视频平台。</p>
+      </div>
+      <div class="faq-item">
+        <h3>下载的视频清晰度如何？</h3>
+        <p>我们会下载平台支持的最高清晰度版本，包括4K/1080P/720P等，具体取决于视频源的原始画质。下单时可指定分辨率需求。</p>
+      </div>
+      <div class="faq-item">
+        <h3>下载的视频有水印吗？</h3>
+        <p>抖音/TikTok等平台默认去水印下载。B站/YouTube等平台视频本身无水印，下载后即为纯净版本。</p>
+      </div>
+      <div class="faq-item">
+        <h3>支持批量下载吗？</h3>
+        <p>支持！播放列表、合集、UP主全部视频均可批量下载。批量单有优惠，具体请咨询客服。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <div class="container">
+    <div class="cta-banner">
+      <h2>🚀 有视频要下载？现在下单！</h2>
+      <p style="opacity:0.85;margin-top:8px;">全平台覆盖 · 高清无水印 · 5-30分钟交付 · 售后无忧</p>
+      <a href="https://66pp.taobao.com/" class="btn" rel="nofollow">🏪 进入淘宝店铺 →</a>
+      <p style="margin-top:12px;font-size:0.85rem;opacity:0.6;">
+        ← <a href="/dataset-download-site/" style="color:rgba(255,255,255,0.7);">返回首页</a> &nbsp;|&nbsp; 更多服务：数据集下载 · 网盘下载 · 文件下载
+      </p>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>© 2024 闪电技术下载科技 &nbsp;|&nbsp; Lightning Tech Download</p>
+      <p><a href="/dataset-download-site/">首页</a> <a href="/dataset-download-site/video-download.html">视频下载</a> <a href="https://66pp.taobao.com/" rel="nofollow">淘宝店铺</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>
